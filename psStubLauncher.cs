@@ -108,9 +108,6 @@ namespace psStubLauncher
 				//Invohe the script
 				powershellObject.Invoke();
 				
-				//Delete the extracted script file, clean up
-				File.Delete(powershellScriptFilePath);
-				
 				//Exits 
 				Environment.Exit(processExitCode);
 			}//Ends the try
