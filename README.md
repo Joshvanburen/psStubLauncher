@@ -1,4 +1,5 @@
-Stub executable that launches a PowerShell script in the same folder as the executable file.
+# psStubLauncher
+Stub Executable to Launch a PowerShell Script
 
 The executable and the PowerShell script must have the same file name, i.e. test.exe and test.ps1.
 
