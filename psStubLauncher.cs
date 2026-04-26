@@ -36,10 +36,10 @@ namespace psStubLauncher
 				
 				//Create the path to the powershell file
 				string powershellScriptFilePath = System.IO.Path.Combine(currExeFolder, exeName);
-				powershellScriptFilePath = """" + powershellScriptFilePath + ".ps1""";
+				powershellScriptFilePath = powershellScriptFilePath + ".ps1";
 				
 				//Check to see if the script exists
-				if(System.IO.File.Exists(powershellScriptFilePath))
+				if(System.IO.File.Exists(powershellScriptFilePath) == false)
 				{
 					//Throw the exception
 					throw new Exception("Unable to find the PowerShell Script File: " + powershellScriptFilePath + ".");
